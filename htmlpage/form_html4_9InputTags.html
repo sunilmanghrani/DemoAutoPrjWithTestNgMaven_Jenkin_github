@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <title>Forms - Input controls</title>
+    <script type="text/javascript">
+      function showmsg() {
+        var usr = document.getElementById("un").value;
+        alert(
+          "Hello " +
+            usr +
+            ",  unlike submit & reset, type=btn depended on javascript for its functionality."
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <span>Forms - Input controls (9)</span> <br />
+    <span>
+      Text, Password, Checkbox, Radio, Submit, Reset, Button, file, Image
+    </span>
+
+    <form action="login.java" method="get" enctype="multipart/form-data">
+      <table border="0">
+        <tr>
+          <th>FirstName:</th>
+          <td><input type="text" name="fname" id="un" size="25" /></td>
+        </tr>
+        <tr>
+          <th>LastName:</th>
+          <td><input type="lname" name="lnm" id="lstnm" /> <br /></td>
+        </tr>
+        <tr>
+          <th align="left">Mobile:</th>
+          <td><input type="text" name="fmobno"  id="mob1" size="25" maxlength="10" /></td>
+        </tr>
+        <tr>
+          <th align="left">Password:</th>
+          <td><input type="password" name="fpass" id="pass1" /></td>
+        </tr>
+        <tr>
+          <th>Prog Lang:</th>
+          <td>
+            <input type="checkbox" id="chkbx" checked value="eng" name="lang0" /><b
+              >Eng-checked</b
+            ><br />
+            <input type="checkbox" value="C" name="lang1" /><b>C lang</b><br />
+            <input type="checkbox" value="C++" name="lang2" /><b>C++ lang</b
+            ><br />
+            <input type="checkbox" value="Java" name="lang3" /><b>Java lang</b
+            ><br />
+            <input type="checkbox" value="C#" name="lang4" /><b>C# lang</b
+            ><br />
+          </td>
+        </tr>
+        <tr>
+          <th align="left">Gender:</th>
+          <td>
+            <input type="radio" name="gender" value="m" /><b>Male</b><br />
+            <input type="radio" name="gender" value="f" /><b>Female </b><br />
+            <input type="radio" name="gender" value="o" checked /><b>checked</b>
+            <br />
+          </td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <th align="left">PayType:</th>
+          <td>
+            <input type="radio" name="pay" value="Credit" /><b>Credit Card</b
+            ><br />
+            <input type="radio" name="pay" value="Debit" /><b>Debit Card </b
+            ><br />
+            <input type="radio" name="pay" value="Cash" checked /><b>Cash</b>
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td>type = file</td>
+          <td>enctype = "multipart/form-data" - in form</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="file" name="uploadedfile" />
+          </td>
+        </tr>
+        <tr>
+          <td>type = file,with multiple attribute</td>
+          <td>multiple files can be select in 1 go by pressing ctrl</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="file" multiple name="uploadedfile" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="type = submit" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="reset" value="type = reset" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="button" onclick="showmsg()" value="type = btn" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="image" src="../images/registerBtn.jpg" width="120" />
+            By default type=image is submit, my functionlity can be chnaged
+            using onclick attrib
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

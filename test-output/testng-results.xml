@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SampleSuite" duration-ms="9883" started-at="2021-06-22T14:46:30Z" finished-at="2021-06-22T14:46:40Z">
+    <groups>
+    </groups>
+    <test name="SampleTest" duration-ms="9883" started-at="2021-06-22T14:46:30Z" finished-at="2021-06-22T14:46:40Z">
+      <class name="com.org.SampleSelTest">
+        <test-method status="PASS" signature="TestMethod()[pri:0, instance:com.org.SampleSelTest@506e6d5e]" name="TestMethod" duration-ms="9870" started-at="2021-06-22T15:46:30Z" finished-at="2021-06-22T15:46:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod -->
+      </class> <!-- com.org.SampleSelTest -->
+    </test> <!-- SampleTest -->
+  </suite> <!-- SampleSuite -->
+</testng-results>
